@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang = "en">
+<!--remember to put language-->
+<head>
+  <meta charset="utf-8">
+    <title>Genre Show</title>
+  <!--key area for websearch-->
+</head>
+<body>
+
+    <!--display genre name-->
+    <h1><%= @genre.name %></h1>
+    <!--display each song  -->
+    <h2><% @genre.songs.each do |song| %>
+    
+        <a href="<%= song.to_slug %>.html"><%= song.name %>
+      <% end %> </h2>
+    <!--display each artist-->
+    <h2><% @genre.artists.each do |artist| %>
+
+        <a href="<%= artist.to_slug %>.html"><%= artist.name %></h2>
+          <% end %>
+</body>
+</html>

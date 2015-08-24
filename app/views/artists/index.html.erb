@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang = "en">
+<!--remember to put language-->
+<head>
+  <meta charset="utf-8">
+    <title>Artist Index</title>
+  <!--key area for websearch-->
+</head>
+<body>
+  <% Artist.all.each do |artist| %>
+  <li><%= artist.name %></li>
+  <%end%>
+
+    <!-- iterate over each instance and call the name of this to display in the index-->
+
+</body>
+</html>
